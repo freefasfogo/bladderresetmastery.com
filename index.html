@@ -8,15 +8,14 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Bladder Reset Mastery">
   <meta property="og:description" content="Simple wellness habits that build everyday confidence. 25-module program with instant access.">
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230F2747'/%3E%3Ctext x='600' y='280' font-family='Playfair Display, serif' font-size='48' fill='%23D9B65A' text-anchor='middle'%3EBladder Reset%3C/text%3E%3Ctext x='600' y='360' font-family='Playfair Display, serif' font-size='40' fill='%23B289FF' text-anchor='middle'%3EMastery%3C/text%3E%3C/svg%3E">
-  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://freefasfogo.github.io/bladderresetmastery.com/og-image.jpg">
+  <meta property="og:url" content="https://freefasfogo.github.io/bladderresetmastery.com/">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
   <!-- Meta Pixel Placeholder -->
-  <!-- META PIXEL: replace PIXEL_ID with your own -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -30,7 +29,6 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
-  <!-- end Meta Pixel -->
   <style>
     /* RESET & BASE */
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -48,7 +46,6 @@
       margin:0 auto;
       padding:0 20px;
     }
-    /* TYPOGRAPHY */
     h1,h2,h3 {
       font-family: 'Playfair Display', serif;
       font-weight:700;
@@ -85,14 +82,6 @@
       margin-bottom:1.5rem;
       text-align:center;
     }
-    .section-sub {
-      text-align:center;
-      font-size:1.1rem;
-      color:#2a3f5e;
-      max-width:680px;
-      margin:0 auto 2rem;
-    }
-    /* CARDS */
     .card-grid {
       display:grid;
       gap:1.5rem;
@@ -106,9 +95,7 @@
       border:1px solid rgba(178,137,255,0.15);
       transition:0.2s;
     }
-    .card-icon {
-      margin-bottom:0.75rem;
-    }
+    .card-icon { margin-bottom:0.75rem; }
     .card h3 { font-size:1.25rem; margin-bottom:0.5rem; font-weight:600; }
     .card p { color:#1e3349; font-size:0.98rem; }
     .check-list { list-style:none; padding:0; }
@@ -120,7 +107,6 @@
       font-size:1rem;
     }
     .check-list svg { flex-shrink:0; margin-top:2px; }
-    /* FAQ accordion */
     .faq-item {
       border-bottom:1px solid #e2e8f0;
       padding:1.2rem 0;
@@ -150,7 +136,6 @@
     }
     .faq-answer.open { max-height:300px; padding-top:0.8rem; }
     .faq-question.open .arrow { transform:rotate(180deg); }
-    /* footer */
     .footer {
       background:#0F2747;
       color:#d0ddea;
@@ -169,12 +154,7 @@
       color:#bcc9dd;
     }
     .footer-links { display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; }
-    /* utility */
     .text-center { text-align:center; }
-    .mt-1 { margin-top:1rem; }
-    .mt-2 { margin-top:2rem; }
-    .mb-1 { margin-bottom:1rem; }
-    .inline-svg { display:inline-block; vertical-align:middle; }
     .badge-group {
       display:flex;
       flex-wrap:wrap;
@@ -185,7 +165,6 @@
       font-weight:500;
     }
     .badge-group span { display:flex; align-items:center; gap:0.3rem; }
-    /* price */
     .price {
       font-size:2.4rem;
       font-weight:700;
@@ -193,7 +172,21 @@
       letter-spacing:-0.01em;
     }
     .price small { font-size:1.1rem; font-weight:400; color:#3a506e; }
-    /* responsive */
+    .hero-wrapper {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:2rem;
+    }
+    .hero-content { flex:1; min-width:280px; }
+    .hero-image { flex:1; min-width:200px; text-align:center; }
+    .hero-image img {
+      max-width:280px;
+      width:100%;
+      border-radius:16px;
+      box-shadow:0 20px 40px rgba(15,39,71,0.12);
+    }
     @media (min-width: 640px) {
       .card-grid { grid-template-columns:repeat(2,1fr); }
     }
@@ -207,27 +200,40 @@
       .container { padding:0 16px; }
       .btn { font-size:1rem; padding:0.7rem 1.5rem; min-height:52px; }
       .section-title { font-size:1.9rem; }
+      .hero-image img { max-width:200px; }
     }
-    /* fade-in animation (intersection) */
     .fade-section { opacity:0; transform:translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .fade-section.visible { opacity:1; transform:translateY(0); }
+    .testimonial-quote {
+      color:#D9B65A;
+      font-size:2.5rem;
+      line-height:1;
+      font-family: 'Playfair Display', serif;
+    }
   </style>
 </head>
 <body>
   <main>
-    <!-- HERO -->
+    <!-- HERO com mockup do ebook -->
     <section class="section" style="padding-bottom:0.5rem;">
-      <div class="container text-center">
-        <h1 style="font-size:2.5rem; line-height:1.2; max-width:700px; margin:0 auto;">Build Everyday Confidence with <span class="gold">Simple Wellness Habits</span></h1>
-        <p style="font-size:1.2rem; color:#1e3349; margin:1.2rem auto; max-width:600px;">25 modules · evidence-based · lifetime access</p>
-        <div style="margin:1.5rem 0;">
-          <span class="price">$25.90 <small>USD</small></span>
-        </div>
-        <a href="#" class="btn js-checkout-btn" role="button">Get Instant Access</a>
-        <div class="badge-group">
-          <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Instant Digital Access</span>
-          <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Private Member Area</span>
-          <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7-Day Money-Back</span>
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-image">
+            <img src="capa-ebook.png" alt="Bladder Reset Mastery - 30 Days to Freedom" loading="lazy">
+          </div>
+          <div class="hero-content text-center">
+            <h1 style="font-size:2.5rem; line-height:1.2;">Build Everyday Confidence with <span class="gold">Simple Wellness Habits</span></h1>
+            <p style="font-size:1.2rem; color:#1e3349; margin:1.2rem auto; max-width:600px;">25 modules · evidence-based · lifetime access</p>
+            <div style="margin:1.5rem 0;">
+              <span class="price">$25.90 <small>USD</small></span>
+            </div>
+            <a href="#" class="btn js-checkout-btn" role="button">Get Instant Access</a>
+            <div class="badge-group">
+              <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Instant Digital Access</span>
+              <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Private Member Area</span>
+              <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7-Day Money-Back</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -237,9 +243,21 @@
       <div class="container">
         <h2 class="section-title">What's Inside <span class="purple">Bladder Reset</span></h2>
         <div class="card-grid">
-          <div class="card"><div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>25 Core Modules</h3><p>Step-by-step habits that build resilience and everyday confidence.</p></div>
-          <div class="card"><div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Daily 5‑Min Rituals</h3><p>Simple routines that fit into your morning, no matter how busy.</p></div>
-          <div class="card"><div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M20 12H4M12 4v16"/></svg></div><h3>Mindset &amp; Awareness</h3><p>Reframe habits with proven psychological tools.</p></div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h3>25 Core Modules</h3>
+            <p>Step-by-step habits that build resilience and everyday confidence.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>Daily 5‑Min Rituals</h3>
+            <p>Simple routines that fit into your morning, no matter how busy.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M20 12H4M12 4v16"/></svg></div>
+            <h3>Mindset &amp; Awareness</h3>
+            <p>Reframe habits with proven psychological tools.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -257,14 +275,26 @@
       </div>
     </section>
 
-    <!-- WHAT YOU'LL LEARN (cards with icons) -->
+    <!-- WHAT YOU'LL LEARN -->
     <section class="section fade-section">
       <div class="container">
         <h2 class="section-title">What You'll <span class="gold">Learn</span></h2>
         <div class="card-grid">
-          <div class="card"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Foundation Habits</h3><p>Anchor your day with 3 core wellness rituals.</p></div>
-          <div class="card"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><h3>Stress &amp; Bladder Connection</h3><p>Understand how the nervous system impacts bladder health.</p></div>
-          <div class="card"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg><h3>Long‑term confidence</h3><p>Tools to maintain progress and feel secure in your body.</p></div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Foundation Habits</h3>
+            <p>Anchor your day with 3 core wellness rituals.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <h3>Stress &amp; Bladder Connection</h3>
+            <p>Understand how the nervous system impacts bladder health.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg></div>
+            <h3>Long‑term confidence</h3>
+            <p>Tools to maintain progress and feel secure in your body.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -282,19 +312,55 @@
       </div>
     </section>
 
-    <!-- WHY WOMEN LOVE -->
+    <!-- WHY WOMEN LOVE (sem emojis) -->
     <section class="section fade-section">
       <div class="container">
         <h2 class="section-title">Why Women Love <span class="purple">This Program</span></h2>
         <div class="card-grid">
-          <div class="card"><h3>✨ Realistic &amp; doable</h3><p>No overhaul, just small daily steps that stick.</p></div>
-          <div class="card"><h3>🧠 Evidence‑based</h3><p>Built on behavioral science and nervous system health.</p></div>
-          <div class="card"><h3>🤝 Supportive community</h3><p>Private member area with like‑minded women.</p></div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>Realistic &amp; doable</h3>
+            <p>No overhaul, just small daily steps that stick.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg></div>
+            <h3>Evidence‑based</h3>
+            <p>Built on behavioral science and nervous system health.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B289FF" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h3>Supportive community</h3>
+            <p>Private member area with like‑minded women.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHAT'S INCLUDED (box) -->
+    <!-- DEPOIMENTOS (prova social) -->
+    <section class="section fade-section" style="background:#f8faff;">
+      <div class="container">
+        <h2 class="section-title">What Women <span class="purple">Are Saying</span></h2>
+        <div class="card-grid">
+          <div class="card">
+            <div class="testimonial-quote">“</div>
+            <p style="font-style:italic; color:#1e3349; margin-top:-0.5rem;">This program helped me understand my body in a way I never had before. The daily habits are so simple, but they actually work.</p>
+            <p style="font-weight:600; margin-top:0.8rem;">— Sarah M.</p>
+          </div>
+          <div class="card">
+            <div class="testimonial-quote">“</div>
+            <p style="font-style:italic; color:#1e3349; margin-top:-0.5rem;">I finally feel like I have tools that fit my life. No shame, no pressure — just practical habits.</p>
+            <p style="font-weight:600; margin-top:0.8rem;">— Jessica R.</p>
+          </div>
+          <div class="card">
+            <div class="testimonial-quote">“</div>
+            <p style="font-style:italic; color:#1e3349; margin-top:-0.5rem;">The 30-day plan made it easy to stay consistent. I actually look forward to my morning routine now.</p>
+            <p style="font-weight:600; margin-top:0.8rem;">— Amanda K.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
     <section class="section fade-section" style="background:#f2f6fe;">
       <div class="container text-center">
         <h2 class="section-title">What's Included</h2>
@@ -309,19 +375,31 @@
       </div>
     </section>
 
-    <!-- OPTIONAL UPGRADES -->
+    <!-- OPTIONAL UPGRADES (descrições suavizadas) -->
     <section class="section fade-section">
       <div class="container">
         <h2 class="section-title">Optional Upgrades</h2>
         <div class="card-grid">
-          <div class="card"><h3>🔥 7‑Day Passion Reset Guide</h3><p>Rekindle intimacy and connection.</p></div>
-          <div class="card"><h3>🌿 Gut Wellness Reset Guide</h3><p>Support digestion and overall vitality.</p></div>
-          <div class="card"><h3>🧘 Hip &amp; Pelvic Mobility Masterclass</h3><p>Gentle movement for pelvic floor health.</p></div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg></div>
+            <h3>7‑Day Passion Reset Guide</h3>
+            <p>A short self-care guide to support everyday confidence and emotional well-being.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></div>
+            <h3>Gut Wellness Reset Guide</h3>
+            <p>Support digestion and overall vitality with simple daily habits.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D9B65A" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Hip &amp; Pelvic Mobility Masterclass</h3>
+            <p>Gentle movement for pelvic floor health and overall mobility.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ (accordion) -->
+    <!-- FAQ -->
     <section class="section fade-section" style="background:#fafaff;">
       <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
@@ -368,31 +446,25 @@
 
   <script>
     (function() {
-      // HOTMART CHECKOUT URL (constant)
       const CHECKOUT_URL = 'https://pay.hotmart.com/F107195098S?checkoutMode=10';
 
-      // Set all checkout buttons
       document.querySelectorAll('.js-checkout-btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
           e.preventDefault();
-          // Meta Pixel InitiateCheckout event
           if (typeof fbq === 'function') {
             fbq('track', 'InitiateCheckout');
           }
           window.location.href = CHECKOUT_URL;
         });
-        // Also set href for fallback
         btn.href = CHECKOUT_URL;
         btn.setAttribute('target', '_blank');
       });
 
-      // FAQ Accordion
       const faqButtons = document.querySelectorAll('.faq-question');
       faqButtons.forEach(btn => {
         btn.addEventListener('click', function() {
           const answer = this.nextElementSibling;
           const isOpen = answer.classList.contains('open');
-          // close others (optional but cleaner)
           document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
           document.querySelectorAll('.faq-question').forEach(b => b.classList.remove('open'));
           if (!isOpen) {
@@ -402,7 +474,6 @@
         });
       });
 
-      // fade-in on scroll (Intersection Observer)
       const fadeSections = document.querySelectorAll('.fade-section');
       if (fadeSections.length) {
         const observer = new IntersectionObserver((entries) => {
@@ -413,7 +484,6 @@
           });
         }, { threshold:0.15 });
         fadeSections.forEach(s => observer.observe(s));
-        // force visible if already in view
         setTimeout(() => {
           fadeSections.forEach(s => {
             if (s.getBoundingClientRect().top < window.innerHeight) s.classList.add('visible');
